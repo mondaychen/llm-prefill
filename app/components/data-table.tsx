@@ -28,15 +28,17 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 
-interface DataTableProps<TData, TValue> {
-  columns: ColumnDef<TData, TValue>[]
-  data: TData[]
+import { type TestResult } from "./columns"
+
+interface DataTableProps<TValue> {
+  columns: ColumnDef<TestResult, TValue>[]
+  data: TestResult[]
 }
 
-export function DataTable<TData, TValue>({
+export function DataTable<TValue>({
   columns,
   data,
-}: DataTableProps<TData, TValue>) {
+}: DataTableProps<TValue>) {
   const [sorting, setSorting] = useState<SortingState>([])
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
 
