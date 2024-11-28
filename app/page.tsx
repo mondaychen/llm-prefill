@@ -20,12 +20,12 @@ export default async function Home() {
   return (
     <main className="min-h-screen p-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold mb-8">LLM Prefix Prompting Results</h1>
+        <h1 className="text-4xl font-bold mb-8">LLM Prefilling Results</h1>
         
         <div className="mb-8">
           <p className="text-lg">
             This page demonstrates how different language models respond to the same prompts
-            with various prefixes that set different personas or tones.
+            with various prefillings intended to guide the model to generate specific formats or wanted content.
           </p>
         </div>
 

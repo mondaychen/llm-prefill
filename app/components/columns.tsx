@@ -55,7 +55,7 @@ export const columns: ColumnDef<TestResult>[] = [
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Prefix
+          Prefill Message
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       )
