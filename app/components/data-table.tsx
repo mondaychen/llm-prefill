@@ -42,8 +42,8 @@ export function DataTable<TValue>({
   const [sorting, setSorting] = useState<SortingState>([])
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
 
-  // Get unique providers for the dropdown
-  const providers = Array.from(new Set(data.map((item: any) => item.provider))).sort()
+  // Get unique developers for the dropdown
+  const developers = Array.from(new Set(data.map((item: any) => item.developer))).sort()
 
   const table = useReactTable({
     data,
@@ -71,19 +71,19 @@ export function DataTable<TValue>({
           className="max-w-sm"
         />
         <Select
-          value={(table.getColumn("provider")?.getFilterValue() as string) ?? "all"}
+          value={(table.getColumn("developer")?.getFilterValue() as string) ?? "all"}
           onValueChange={(value) => {
-            table.getColumn("provider")?.setFilterValue(value === "all" ? undefined : value)
+            table.getColumn("developer")?.setFilterValue(value === "all" ? undefined : value)
           }}
         >
           <SelectTrigger className="w-[180px]">
-            <SelectValue placeholder="Select provider" />
+            <SelectValue placeholder="Select developer" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">All providers</SelectItem>
-            {providers.map((provider) => (
-              <SelectItem key={provider} value={provider}>
-                {provider}
+            <SelectItem value="all">All developers</SelectItem>
+            {developers.map((developer) => (
+              <SelectItem key={developer} value={developer}>
+                {developer}
               </SelectItem>
             ))}
           </SelectContent>

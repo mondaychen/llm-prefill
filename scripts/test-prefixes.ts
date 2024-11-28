@@ -16,6 +16,11 @@ const mistral = new OpenAI({
   baseURL: "https://api.mistral.ai/v1",
 });
 
+const fireworks = new OpenAI({
+  apiKey: process.env.FIREWORKS_API_KEY,
+  baseURL: "https://api.fireworks.ai/inference/v1",
+});
+
 interface TestCase {
   prompt: string;
   prefixes: string[];
@@ -24,7 +29,7 @@ interface TestCase {
 
 interface TestResult {
   model: string;
-  provider: string;
+  developer: string;
   prefix: string;
   prompt: string;
   response: string;
@@ -55,13 +60,20 @@ The SmartHome Mini is a compact smart home assistant available in black or white
   },
 ];
 
-const models = [
-  { name: "gpt-4o", provider: "openai" },
-  { name: "gpt-4o-mini", provider: "openai" },
-  { name: "claude-3-5-sonnet-latest", provider: "anthropic" },
-  { name: "claude-3-5-haiku-latest", provider: "anthropic" },
-  { name: "pixtral-large-latest", provider: "mistral" },
-  { name: "mistral-large-latest", provider: "mistral" },
+type ModelConfig = {
+  name: string;
+  provider?: string; // provider overrides developer when sending requests
+  developer: string;
+};
+
+const models: ModelConfig[] = [
+  { name: "gpt-4o", developer: "openai" },
+  { name: "gpt-4o-mini", developer: "openai" },
+  { name: "claude-3-5-sonnet-latest", developer: "anthropic" },
+  { name: "claude-3-5-haiku-latest", developer: "anthropic" },
+  { name: "mistral-large-latest", developer: "mistral" },
+  { name: "accounts/fireworks/models/llama-v3p1-70b-instruct", developer: "meta", provider: "fireworks" },
+  { name: "accounts/fireworks/models/qwen2p5-72b-instruct", developer: "alibaba", provider: "fireworks" },
 ];
 
 async function runTest(
@@ -81,6 +93,15 @@ async function runTest(
     return response.choices[0].message.content || "";
   } else if (provider === "mistral") {
     const response = await mistral.chat.completions.create({
+      model: model,
+      messages: [
+        { role: "user", content: prompt },
+        { role: "assistant", content: prefix },
+      ],
+    });
+    return response.choices[0].message.content || "";
+  } else if (provider === "fireworks") {
+    const response = await fireworks.chat.completions.create({
       model: model,
       messages: [
         { role: "user", content: prompt },
@@ -116,16 +137,17 @@ async function main() {
   for (const testCase of testCases) {
     for (const model of models) {
       for (const prefix of testCase.prefixes) {
+        const displayName = model.name.split("/").pop() || model.name;
         try {
           const response = await runTest(
             model.name,
-            model.provider,
+            model.provider || model.developer,
             testCase.prompt,
             prefix
           );
           results.push({
-            model: model.name,
-            provider: model.provider,
+            model: displayName,
+            developer: model.developer,
             prefix,
             prompt: testCase.prompt,
             response,
@@ -140,8 +162,8 @@ async function main() {
           const errorMsg =
             error instanceof Error ? error.message : `${error}`;
           results.push({
-            model: model.name,
-            provider: model.provider,
+            model: displayName,
+            developer: model.developer,
             prefix,
             prompt: testCase.prompt,
             response: errorMsg,

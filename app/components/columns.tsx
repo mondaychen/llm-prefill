@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 export interface TestResult {
   model: string
-  provider: string
+  developer: string
   prefix: string
   prompt: string
   response: string
@@ -30,14 +30,14 @@ export const columns: ColumnDef<TestResult>[] = [
     },
   },
   {
-    accessorKey: "provider",
+    accessorKey: "developer",
     header: ({ column }) => {
       return (
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Provider
+          Developer
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       )

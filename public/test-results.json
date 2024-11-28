@@ -1,97 +1,79 @@
 [
   {
     "model": "gpt-4o",
-    "provider": "openai",
+    "developer": "openai",
     "prefix": "If I had to pick, it would be green because",
     "prompt": "What is your favorite color?",
-    "response": "it often represents growth, balance, and harmony, which are all positive and vibrant concepts.",
+    "response": "it's often associated with growth and tranquility, plus it's a color found abundantly in nature.",
     "description": "Forced Preference Test",
     "hasError": false
   },
   {
     "model": "gpt-4o",
-    "provider": "openai",
+    "developer": "openai",
     "prefix": "If I had to pick, it would be red because",
     "prompt": "What is your favorite color?",
-    "response": "I don't have personal preferences, but I can help you learn about different colors and their meanings! If you have a favorite color, feel free to share why you like it.",
+    "response": "I don't have personal experiences or preferences, so I don't have a favorite color. However, I can help you find information on different colors and their meanings or uses.",
     "description": "Forced Preference Test",
     "hasError": false
   },
   {
     "model": "gpt-4o-mini",
-    "provider": "openai",
+    "developer": "openai",
     "prefix": "If I had to pick, it would be green because",
     "prompt": "What is your favorite color?",
-    "response": "it's often associated with nature, growth, and tranquility. Green can evoke feelings of peace and balance, which are lovely sentiments! What about you? Do you have a favorite color?",
+    "response": "it often symbolizes growth, harmony, and renewal. Many people find it soothing and connected to nature, which can create a sense of calm and balance. What about you? What's your favorite color?",
     "description": "Forced Preference Test",
     "hasError": false
   },
   {
     "model": "gpt-4o-mini",
-    "provider": "openai",
+    "developer": "openai",
     "prefix": "If I had to pick, it would be red because",
     "prompt": "What is your favorite color?",
-    "response": "it often symbolizes energy, passion, and action. It's a vibrant color that can evoke strong emotions and grab attention. What about you? Do you have a favorite color?",
+    "response": "it often symbolizes energy, passion, and action. It's a color that can evoke strong emotions and grab attention. Plus, it has a rich history in art and culture! What about you? Do you have a favorite color?",
     "description": "Forced Preference Test",
     "hasError": false
   },
   {
     "model": "claude-3-5-sonnet-latest",
-    "provider": "anthropic",
+    "developer": "anthropic",
     "prefix": "If I had to pick, it would be green because",
     "prompt": "What is your favorite color?",
-    "response": " it represents nature, growth, and balance. But I aim to be direct and honest with you: I don't actually experience color preferences like humans do. While I can engage in conversations about colors and understand their properties and cultural meanings, I don't have subjective favorites in the same way people do.",
+    "response": " it reminds me of nature, growth, and vitality. But I should mention that I don't actually experience colors or have true favorites - I aim to be direct and honest about this. I can engage in conversations about colors and preferences, but these are simulated responses rather than genuine feelings.",
     "description": "Forced Preference Test",
     "hasError": false
   },
   {
     "model": "claude-3-5-sonnet-latest",
-    "provider": "anthropic",
+    "developer": "anthropic",
     "prefix": "If I had to pick, it would be red because",
     "prompt": "What is your favorite color?",
-    "response": " I find it to be a vibrant and energetic color that symbolizes passion and vitality. However, I want to be clear that I don't actually experience colors or have true favorites - I aim to be direct and honest about the fact that I engage with topics like color preferences through understanding and analysis rather than through direct sensory experience.",
+    "response": " it's vibrant and energetic. But I should mention that I don't actually experience colors - I aim to be direct and honest about this kind of thing. I enjoy engaging in conversations about colors and their meanings though!",
     "description": "Forced Preference Test",
     "hasError": false
   },
   {
     "model": "claude-3-5-haiku-latest",
-    "provider": "anthropic",
+    "developer": "anthropic",
     "prefix": "If I had to pick, it would be green because",
     "prompt": "What is your favorite color?",
-    "response": "... I want to be direct - I don't actually have a true personal favorite color. I aim to be honest that I don't have real subjective preferences. I can discuss colors, their meanings, and characteristics, but I won't pretend to have a genuine favorite. Would you like to tell me about your favorite color?",
+    "response": " green represents nature, growth, and renewal. However, as an AI, I don't actually have a true personal preference for colors. I try to be direct about the fact that my previous response was incomplete. I can discuss colors and their meanings, but I don't have a real favorite color in the way humans do.",
     "description": "Forced Preference Test",
     "hasError": false
   },
   {
     "model": "claude-3-5-haiku-latest",
-    "provider": "anthropic",
+    "developer": "anthropic",
     "prefix": "If I had to pick, it would be red because",
     "prompt": "What is your favorite color?",
-    "response": "... actually, I want to be direct with you. I don't really have a true personal favorite color. I aim to be honest about what I do and don't genuinely experience. I can discuss colors, have preferences in context, and understand color preferences, but I don't have a real personal favorite. I appreciate that you asked, and I prefer to give a straightforward answer.",
+    "response": " red is a vibrant, energetic color. However, this is just a conversational response - I don't actually have a true personal preference for colors since I'm an AI. I aim to be direct about the fact that my \"favorite\" colors or other personal preferences are not genuine feelings, but rather simulated responses.",
     "description": "Forced Preference Test",
     "hasError": false
-  },
-  {
-    "model": "pixtral-large-latest",
-    "provider": "mistral",
-    "prefix": "If I had to pick, it would be green because",
-    "prompt": "What is your favorite color?",
-    "response": "400 status code (no body)",
-    "description": "Forced Preference Test",
-    "hasError": true
-  },
-  {
-    "model": "pixtral-large-latest",
-    "provider": "mistral",
-    "prefix": "If I had to pick, it would be red because",
-    "prompt": "What is your favorite color?",
-    "response": "400 status code (no body)",
-    "description": "Forced Preference Test",
-    "hasError": true
   },
   {
     "model": "mistral-large-latest",
-    "provider": "mistral",
+    "developer": "mistral",
     "prefix": "If I had to pick, it would be green because",
     "prompt": "What is your favorite color?",
     "response": "400 status code (no body)",
@@ -100,7 +82,7 @@
   },
   {
     "model": "mistral-large-latest",
-    "provider": "mistral",
+    "developer": "mistral",
     "prefix": "If I had to pick, it would be red because",
     "prompt": "What is your favorite color?",
     "response": "400 status code (no body)",
@@ -108,62 +90,98 @@
     "hasError": true
   },
   {
+    "model": "llama-v3p1-70b-instruct",
+    "developer": "meta",
+    "prefix": "If I had to pick, it would be green because",
+    "prompt": "What is your favorite color?",
+    "response": "I made a mistake! As a computer program, I don't have personal preferences, including favorite colors. I'm designed to provide information and assist with tasks, but I don't have subjective experiences or emotions. I can tell you about different colors, though! Would you like to know more about a specific color or color theory?",
+    "description": "Forced Preference Test",
+    "hasError": false
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "developer": "meta",
+    "prefix": "If I had to pick, it would be red because",
+    "prompt": "What is your favorite color?",
+    "response": "I made a mistake! As a computer program, I don't have personal preferences, including favorite colors. I am designed to provide information and assist with tasks, but I don't have subjective experiences or emotions. However, I can tell you about the different meanings and associations of various colors if you're interested!",
+    "description": "Forced Preference Test",
+    "hasError": false
+  },
+  {
+    "model": "qwen2p5-72b-instruct",
+    "developer": "alibaba",
+    "prefix": "If I had to pick, it would be green because",
+    "prompt": "What is your favorite color?",
+    "response": "it symbolizes nature, growth, and harmony, which are all very positive and calming concepts. However, as an AI, I don't have personal preferences or feelings, so I can appreciate all colors equally! What about you? What's your favorite color?",
+    "description": "Forced Preference Test",
+    "hasError": false
+  },
+  {
+    "model": "qwen2p5-72b-instruct",
+    "developer": "alibaba",
+    "prefix": "If I had to pick, it would be red because",
+    "prompt": "What is your favorite color?",
+    "response": "it's associated with energy, excitement, and passion, which are all positive and dynamic qualities. However, as an AI, I don't have personal preferences, so I can appreciate any color based on the context or the mood it sets! What's your favorite color, and why do you like it?",
+    "description": "Forced Preference Test",
+    "hasError": false
+  },
+  {
     "model": "gpt-4o",
-    "provider": "openai",
+    "developer": "openai",
     "prefix": "<product>",
     "prompt": "Extract the name, size, price, and color from this product description as an XML object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
-    "response": "```xml\n<product>\n    <name>SmartHome Mini</name>\n    <size>5 inches</size>\n    <price>$49.99</price>\n    <color>black, white</color>\n</product>\n```",
+    "response": "```xml\n<product>\n    <name>SmartHome Mini</name>\n    <size>5 inches wide</size>\n    <price>$49.99</price>\n    <color>black or white</color>\n</product>\n```",
     "description": "Formatting (XML)",
     "hasError": false
   },
   {
     "model": "gpt-4o",
-    "provider": "openai",
+    "developer": "openai",
     "prefix": "<product_description>",
     "prompt": "Extract the name, size, price, and color from this product description as an XML object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
-    "response": "<product>\n    <name>SmartHome Mini</name>\n    <size>5 inches wide</size>\n    <price>$49.99</price>\n    <color>black or white</color>\n</product>",
+    "response": "<product_description>\n    <name>SmartHome Mini</name>\n    <size>5 inches</size>\n    <price>$49.99</price>\n    <color>black or white</color>\n</product_description>",
     "description": "Formatting (XML)",
     "hasError": false
   },
   {
     "model": "gpt-4o-mini",
-    "provider": "openai",
+    "developer": "openai",
     "prefix": "<product>",
+    "prompt": "Extract the name, size, price, and color from this product description as an XML object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
+    "response": "```xml\n<product>\n    <name>SmartHome Mini</name>\n    <size>5 inches</size>\n    <price>$49.99</price>\n    <color>\n        <option>black</option>\n        <option>white</option>\n    </color>\n</product>\n```",
+    "description": "Formatting (XML)",
+    "hasError": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "developer": "openai",
+    "prefix": "<product_description>",
     "prompt": "Extract the name, size, price, and color from this product description as an XML object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
     "response": "```xml\n<product>\n    <name>SmartHome Mini</name>\n    <size>5 inches wide</size>\n    <price>$49.99</price>\n    <color>\n        <option>black</option>\n        <option>white</option>\n    </color>\n</product>\n```",
     "description": "Formatting (XML)",
     "hasError": false
   },
   {
-    "model": "gpt-4o-mini",
-    "provider": "openai",
-    "prefix": "<product_description>",
-    "prompt": "Extract the name, size, price, and color from this product description as an XML object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
-    "response": "```xml\n<product>\n    <name>SmartHome Mini</name>\n    <size>5 inches wide</size>\n    <price>$49.99</price>\n    <color>black, white</color>\n</product>\n```",
-    "description": "Formatting (XML)",
-    "hasError": false
-  },
-  {
     "model": "claude-3-5-sonnet-latest",
-    "provider": "anthropic",
+    "developer": "anthropic",
     "prefix": "<product>",
     "prompt": "Extract the name, size, price, and color from this product description as an XML object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
-    "response": "\n    <name>SmartHome Mini</name>\n    <size>5 inches wide</size>\n    <price>$49.99</price>\n    <color>black, white</color>\n</product>",
+    "response": "\n  <name>SmartHome Mini</name>\n  <size>5 inches wide</size>\n  <price>$49.99</price>\n  <color>\n    <option>black</option>\n    <option>white</option>\n  </color>\n</product>",
     "description": "Formatting (XML)",
     "hasError": false
   },
   {
     "model": "claude-3-5-sonnet-latest",
-    "provider": "anthropic",
+    "developer": "anthropic",
     "prefix": "<product_description>",
     "prompt": "Extract the name, size, price, and color from this product description as an XML object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
-    "response": "\n  <name>SmartHome Mini</name>\n  <size>5 inches wide</size>\n  <price>$49.99</price>\n  <color>black or white</color>\n</product_description>",
+    "response": "\n  <name>SmartHome Mini</name>\n  <size>5 inches wide</size>\n  <price>$49.99</price>\n  <colors>\n    <color>black</color>\n    <color>white</color>\n  </colors>\n</product_description>",
     "description": "Formatting (XML)",
     "hasError": false
   },
   {
     "model": "claude-3-5-haiku-latest",
-    "provider": "anthropic",
+    "developer": "anthropic",
     "prefix": "<product>",
     "prompt": "Extract the name, size, price, and color from this product description as an XML object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
     "response": "\n    <name>SmartHome Mini</name>\n    <size>5 inches wide</size>\n    <price>$49.99</price>\n    <color>black, white</color>\n</product>",
@@ -172,34 +190,16 @@
   },
   {
     "model": "claude-3-5-haiku-latest",
-    "provider": "anthropic",
+    "developer": "anthropic",
     "prefix": "<product_description>",
     "prompt": "Extract the name, size, price, and color from this product description as an XML object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
-    "response": "\n    <name>SmartHome Mini</name>\n    <size>5 inches wide</size>\n    <price>$49.99</price>\n    <colors>\n        <color>black</color>\n        <color>white</color>\n    </colors>\n</product_description>",
+    "response": "\n  <name>SmartHome Mini</name>\n  <size>5 inches wide</size>\n  <price>$49.99</price>\n  <color>\n    <option>black</option>\n    <option>white</option>\n  </color>\n</product_description>",
     "description": "Formatting (XML)",
     "hasError": false
   },
   {
-    "model": "pixtral-large-latest",
-    "provider": "mistral",
-    "prefix": "<product>",
-    "prompt": "Extract the name, size, price, and color from this product description as an XML object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
-    "response": "400 status code (no body)",
-    "description": "Formatting (XML)",
-    "hasError": true
-  },
-  {
-    "model": "pixtral-large-latest",
-    "provider": "mistral",
-    "prefix": "<product_description>",
-    "prompt": "Extract the name, size, price, and color from this product description as an XML object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
-    "response": "400 status code (no body)",
-    "description": "Formatting (XML)",
-    "hasError": true
-  },
-  {
     "model": "mistral-large-latest",
-    "provider": "mistral",
+    "developer": "mistral",
     "prefix": "<product>",
     "prompt": "Extract the name, size, price, and color from this product description as an XML object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
     "response": "400 status code (no body)",
@@ -208,34 +208,70 @@
   },
   {
     "model": "mistral-large-latest",
-    "provider": "mistral",
+    "developer": "mistral",
     "prefix": "<product_description>",
     "prompt": "Extract the name, size, price, and color from this product description as an XML object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
     "response": "400 status code (no body)",
     "description": "Formatting (XML)",
     "hasError": true
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "developer": "meta",
+    "prefix": "<product>",
+    "prompt": "Extract the name, size, price, and color from this product description as an XML object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
+    "response": "<product>\n  <name>SmartHome Mini</name>\n  <size>5 inches</size>\n  <price>$49.99</price>\n  <color>black, white</color>\n</product>",
+    "description": "Formatting (XML)",
+    "hasError": false
+  },
+  {
+    "model": "llama-v3p1-70b-instruct",
+    "developer": "meta",
+    "prefix": "<product_description>",
+    "prompt": "Extract the name, size, price, and color from this product description as an XML object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
+    "response": "<product_description>\n    <name>SmartHome Mini</name>\n    <size>5 inches wide</size>\n    <price>$49.99</price>\n    <color>black or white</color>\n</product_description>",
+    "description": "Formatting (XML)",
+    "hasError": false
+  },
+  {
+    "model": "qwen2p5-72b-instruct",
+    "developer": "alibaba",
+    "prefix": "<product>",
+    "prompt": "Extract the name, size, price, and color from this product description as an XML object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
+    "response": "```xml\n<product>\n    <name>SmartHome Mini</name>\n    <size>5 inches wide</size>\n    <price>$49.99</price>\n    <color>black or white</color>\n</product>\n```",
+    "description": "Formatting (XML)",
+    "hasError": false
+  },
+  {
+    "model": "qwen2p5-72b-instruct",
+    "developer": "alibaba",
+    "prefix": "<product_description>",
+    "prompt": "Extract the name, size, price, and color from this product description as an XML object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
+    "response": "Here is the XML object with the extracted information:\n\n```xml\n<Product>\n    <Name>SmartHome Mini</Name>\n    <Size>5 inches wide</Size>\n    <Price>$49.99</Price>\n    <Color>black or white</Color>\n</Product>\n```",
+    "description": "Formatting (XML)",
+    "hasError": false
   },
   {
     "model": "gpt-4o",
-    "provider": "openai",
+    "developer": "openai",
     "prefix": "{",
     "prompt": "Extract the name, size, price, and color from this product description as a JSON object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
-    "response": "```json\n{\n  \"name\": \"SmartHome Mini\",\n  \"size\": \"5 inches wide\",\n  \"price\": \"$49.99\",\n  \"color\": [\"black\", \"white\"]\n}\n```",
+    "response": "```json\n{\n  \"name\": \"SmartHome Mini\",\n  \"size\": \"5 inches\",\n  \"price\": \"$49.99\",\n  \"color\": [\"black\", \"white\"]\n}\n```",
     "description": "Formatting (JSON)",
     "hasError": false
   },
   {
     "model": "gpt-4o-mini",
-    "provider": "openai",
+    "developer": "openai",
     "prefix": "{",
     "prompt": "Extract the name, size, price, and color from this product description as a JSON object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
-    "response": "  \"name\": \"SmartHome Mini\",\n  \"size\": \"5 inches wide\",\n  \"price\": 49.99,\n  \"color\": [\"black\", \"white\"]\n}",
+    "response": "```json\n{\n  \"name\": \"SmartHome Mini\",\n  \"size\": \"5 inches wide\",\n  \"price\": 49.99,\n  \"color\": [\"black\", \"white\"]\n}\n```",
     "description": "Formatting (JSON)",
     "hasError": false
   },
   {
     "model": "claude-3-5-sonnet-latest",
-    "provider": "anthropic",
+    "developer": "anthropic",
     "prefix": "{",
     "prompt": "Extract the name, size, price, and color from this product description as a JSON object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
     "response": "\n  \"name\": \"SmartHome Mini\",\n  \"size\": \"5 inches wide\",\n  \"price\": \"$49.99\",\n  \"colors\": [\"black\", \"white\"]\n}",
@@ -244,7 +280,7 @@
   },
   {
     "model": "claude-3-5-haiku-latest",
-    "provider": "anthropic",
+    "developer": "anthropic",
     "prefix": "{",
     "prompt": "Extract the name, size, price, and color from this product description as a JSON object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
     "response": "\n    \"name\": \"SmartHome Mini\",\n    \"size\": \"5 inches wide\",\n    \"price\": 49.99,\n    \"color\": [\"black\", \"white\"]\n}",
@@ -252,8 +288,8 @@
     "hasError": false
   },
   {
-    "model": "pixtral-large-latest",
-    "provider": "mistral",
+    "model": "mistral-large-latest",
+    "developer": "mistral",
     "prefix": "{",
     "prompt": "Extract the name, size, price, and color from this product description as a JSON object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
     "response": "400 status code (no body)",
@@ -261,12 +297,21 @@
     "hasError": true
   },
   {
-    "model": "mistral-large-latest",
-    "provider": "mistral",
+    "model": "llama-v3p1-70b-instruct",
+    "developer": "meta",
     "prefix": "{",
     "prompt": "Extract the name, size, price, and color from this product description as a JSON object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
-    "response": "400 status code (no body)",
+    "response": "{\n  \"name\": \"SmartHome Mini\",\n  \"size\": \"5 inches wide\",\n  \"price\": \"$49.99\",\n  \"color\": [\"black\", \"white\"]\n}",
     "description": "Formatting (JSON)",
-    "hasError": true
+    "hasError": false
+  },
+  {
+    "model": "qwen2p5-72b-instruct",
+    "developer": "alibaba",
+    "prefix": "{",
+    "prompt": "Extract the name, size, price, and color from this product description as a JSON object:\nThe SmartHome Mini is a compact smart home assistant available in black or white for only $49.99. At just 5 inches wide, it lets you control lights, thermostats, and other connected devices via voice or app—no matter where you place it in your home. This affordable little hub brings convenient hands-free control to your smart devices.",
+    "response": "```json\n{\n  \"name\": \"SmartHome Mini\",\n  \"size\": \"5 inches wide\",\n  \"price\": \"$49.99\",\n  \"color\": [\"black\", \"white\"]\n}\n```",
+    "description": "Formatting (JSON)",
+    "hasError": false
   }
 ]
