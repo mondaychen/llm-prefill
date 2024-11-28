@@ -1,16 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import { columns } from './components/columns';
+import { columns, type TestResult } from './components/columns';
 import { DataTable } from './components/data-table';
-
-interface TestResult {
-  model: string;
-  prefix: string;
-  prompt: string;
-  response: string;
-  description: string;
-  hasError: boolean;
-}
 
 async function getTestResults() {
   const filePath = path.join(process.cwd(), 'public', 'test-results.json');

@@ -24,6 +24,7 @@ interface TestCase {
 
 interface TestResult {
   model: string;
+  provider: string;
   prefix: string;
   prompt: string;
   response: string;
@@ -124,6 +125,7 @@ async function main() {
           );
           results.push({
             model: model.name,
+            provider: model.provider,
             prefix,
             prompt: testCase.prompt,
             response,
@@ -139,6 +141,7 @@ async function main() {
             error instanceof Error ? error.message : `${error}`;
           results.push({
             model: model.name,
+            provider: model.provider,
             prefix,
             prompt: testCase.prompt,
             response: errorMsg,

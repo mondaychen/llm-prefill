@@ -20,6 +20,13 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[]
@@ -32,6 +39,9 @@ export function DataTable<TData, TValue>({
 }: DataTableProps<TData, TValue>) {
   const [sorting, setSorting] = useState<SortingState>([])
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
+
+  // Get unique providers for the dropdown
+  const providers = Array.from(new Set(data.map((item: any) => item.provider))).sort()
 
   const table = useReactTable({
     data,
@@ -49,7 +59,7 @@ export function DataTable<TData, TValue>({
 
   return (
     <div>
-      <div className="flex items-center py-4">
+      <div className="flex items-center gap-4 py-4">
         <Input
           placeholder="Filter by model..."
           value={(table.getColumn("model")?.getFilterValue() as string) ?? ""}
@@ -58,6 +68,24 @@ export function DataTable<TData, TValue>({
           }
           className="max-w-sm"
         />
+        <Select
+          value={(table.getColumn("provider")?.getFilterValue() as string) ?? "all"}
+          onValueChange={(value) => {
+            table.getColumn("provider")?.setFilterValue(value === "all" ? undefined : value)
+          }}
+        >
+          <SelectTrigger className="w-[180px]">
+            <SelectValue placeholder="Select provider" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="all">All providers</SelectItem>
+            {providers.map((provider) => (
+              <SelectItem key={provider} value={provider}>
+                {provider}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
       </div>
       <div className="rounded-md border">
         <Table>
@@ -85,6 +113,7 @@ export function DataTable<TData, TValue>({
                 <TableRow
                   key={row.id}
                   data-state={row.getIsSelected() && "selected"}
+                  className={row.original.hasError ? 'bg-red-50 hover:bg-red-100' : 'hover:bg-gray-50'}
                 >
                   {row.getVisibleCells().map((cell) => (
                     <TableCell key={cell.id}>

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 
 export interface TestResult {
   model: string
+  provider: string
   prefix: string
   prompt: string
   response: string
@@ -29,6 +30,24 @@ export const columns: ColumnDef<TestResult>[] = [
     },
   },
   {
+    accessorKey: "provider",
+    header: ({ column }) => {
+      return (
+        <Button
+          variant="ghost"
+          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+        >
+          Provider
+          <ArrowUpDown className="ml-2 h-4 w-4" />
+        </Button>
+      )
+    },
+  },
+  {
+    accessorKey: "prompt",
+    header: "Prompt",
+  },
+  {
     accessorKey: "prefix",
     header: ({ column }) => {
       return (
@@ -43,11 +62,15 @@ export const columns: ColumnDef<TestResult>[] = [
     },
   },
   {
-    accessorKey: "prompt",
-    header: "Prompt",
-  },
-  {
     accessorKey: "response",
     header: "Response",
+    cell: ({ row }) => {
+      const hasError = row.original.hasError
+      return (
+        <div className={`${hasError ? 'text-red-600' : 'text-gray-500'}`}>
+          {row.getValue("response")}
+        </div>
+      )
+    }
   },
 ]
